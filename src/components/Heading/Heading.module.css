@@ -1,0 +1,19 @@
+.heading {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.heading-line {
+    position: absolute;
+    content: "";
+    width: 75%;
+    height: 4px;
+    background-color: #423574;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 250%);
+}

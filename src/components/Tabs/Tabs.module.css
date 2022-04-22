@@ -1,0 +1,13 @@
+.tabs{
+    display: flex;
+    max-width: 90%;
+    width: 1000px;
+    margin: 4rem auto;
+    gap: 2rem;
+}
+
+@media(max-width: 768px) {
+    .tabs {
+        flex-direction: column;
+    }
+}

@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Heading from './components/Heading/Heading';
+import Tabs from './components/Tabs/Tabs';
+import { motion } from 'framer-motion';
+import {container, item} from './framer-variables';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <React.Fragment>
+      <motion.div variants={container} initial="hidden" animate="show">
+        <motion.div variants={item}>
+          <Heading>Experience</Heading>
+        </motion.div>
+        <motion.div variants={item}>
+          <Tabs />
+        </motion.div>
+      </motion.div>
+    </React.Fragment>
+  )
 }
 
-export default App;
+export default App
